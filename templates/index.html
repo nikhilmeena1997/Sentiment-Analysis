@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylish2.css')}}">
+	<title>Twitter U.S.A Airline sentiment analyses</title>
+</head>
+<body>
+  <CENTER><h1><big><b><<- U.S AIRLINE SENTIMENT ANALYSES ->></b></big></h1></CENTER>
+  <center><img src="https://static4.depositphotos.com/1004841/282/i/450/depositphotos_2827951-stock-photo-aeroplane.jpg" height="300px" width="500px"></center>
+  <center><h2><b>Please Enter your travelling feedback :)</b></h2></center><br>
+  <form method="POST" action="/">
+  <center><input id="res" type="text" name="tweet" placeholder="Enter your feedback here"></center>
+  <center><b><button class="but">Submit</button></b></center>
+</form>
+<br>
+ {% if your_sentiment %}
+  <h3><strong>Your reaction is : <i>{{your_sentiment}}</i></strong></h3>
+ {% endif %} 
+
+</body>
+</html>

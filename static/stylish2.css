@@ -1,0 +1,10 @@
+h1{
+	color: white;
+	background: black;
+}
+#res{
+	border: 3px solid black;
+}
+.but:hover{
+	color: steelblue;
+}
